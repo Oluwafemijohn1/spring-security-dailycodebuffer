@@ -21,7 +21,9 @@ public class WebSecurityConfig {
 
     private static final String[] WHITE_LIST_URLS = {
             "/hello",
-            "register"
+            "/register",
+            "/verifyRegistration*",
+            "/resendVerificationToken*"
     };
 
     @Bean
@@ -45,24 +47,24 @@ public class WebSecurityConfig {
 //                .httpBasic(Customizer.withDefaults());
 
 
-//                .cors()
-//                .and()
-//                .csrf()
-//                .disable()
-//                .authorizeHttpRequests()
-//                .requestMatchers(WHITE_LIST_URLS)
-//                .permitAll()
-//                .and()
-//                .httpBasic();
+                .cors()
+                .and()
+                .csrf()
+                .disable()
+                .authorizeHttpRequests()
+                .antMatchers(WHITE_LIST_URLS)
+                .permitAll()
+                .and()
+                .httpBasic();
 
 
-                .csrf(AbstractHttpConfigurer::disable)
-                .cors(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests((request) ->
-                        request.requestMatchers(WHITE_LIST_URLS).authenticated()
-                                .anyRequest().permitAll()
-                ).formLogin(Customizer.withDefaults())
-                .httpBasic(Customizer.withDefaults());
+//                .csrf(AbstractHttpConfigurer::disable)
+//                .cors(AbstractHttpConfigurer::disable)
+//                .authorizeHttpRequests((request) ->
+//                        request.requestMatchers(WHITE_LIST_URLS).authenticated()
+//                                .anyRequest().permitAll()
+//                ).formLogin(Customizer.withDefaults())
+//                .httpBasic(Customizer.withDefaults());
 
         return httpSecurity.build();
     }

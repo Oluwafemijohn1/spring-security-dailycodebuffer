@@ -7,10 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserModel {
-    private Long id;
-    private String firstname;
-    private String lastname;
+public class PasswordModel {
     private String email;
-    private String password;
+    private String oldPassword;
+    private String newPassword;
 }

@@ -4,27 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="652043b5-5219-41ea-8739-452e085828e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/VerificationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/event/RegistrationCompleteEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/VerificationTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+    <list default="true" id="652043b5-5219-41ea-8739-452e085828e9" name="Changes" comment="Stuck with the SecurityFilterChain config">
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/PasswordResetToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/model/PasswordModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/PasswordResetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/VerificationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/entity/VerificationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/repository/VerificationTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/ephemzy/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -105,11 +102,32 @@
       <workItem from="1706524619465" duration="634000" />
       <workItem from="1706528621302" duration="47000" />
       <workItem from="1706528682361" duration="7471000" />
-      <workItem from="1706545871009" duration="8095000" />
+      <workItem from="1706545871009" duration="26840000" />
     </task>
+    <task id="LOCAL-00001" summary="Stuck with the SecurityFilterChain config">
+      <option name="closed" value="true" />
+      <created>1706887285148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706887285148</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Stuck with the SecurityFilterChain config">
+      <option name="closed" value="true" />
+      <created>1706887322988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706887322988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Stuck with the SecurityFilterChain config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stuck with the SecurityFilterChain config" />
   </component>
 </project>
