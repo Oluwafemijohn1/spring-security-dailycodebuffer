@@ -10,5 +10,6 @@
   <packaging>pom</packaging> <!-- This should be added when adding a module -->
   <modules>
     <module>spring-security-client</module> <!-- This should be added when adding a module -->
+    <module>Oauth-authorization-server</module>
   </modules>
 </project>
